@@ -1,5 +1,11 @@
 package Generic;
 
+import java.awt.Dimension;
+import java.time.Duration;
+
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidDriver;
+
 public class GenericMethods {
 
 //
@@ -12,4 +18,12 @@ public class GenericMethods {
 //		actions.press(widthX, hightY1).waitAction(Duration.ofSeconds(0)).moveTo(widthX, hightY2).release().perform();
 //	}
 
+	public void scrollUp(AndroidDriver driver) {
+		org.openqa.selenium.Dimension dimention = driver.manage().window().getSize();
+		int widthX = (int) (dimention.width / 2);
+		int hightY1 = (int) (dimention.height * 0.8); 
+		int hightY2 = (int) (dimention.height * 0.2);
+		TouchAction actions = new TouchAction(driver);
+		//actions.press(widthX, hightY1).waitAction(Duration.ofSeconds(0)).moveTo(widthX, hightY2).release().perform();
+	}
 }
