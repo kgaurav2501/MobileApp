@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="appPackage" value="com.i2iborrower"/>
+  <parameter name="appActivity" value="com.i2iborrower.activities.SplashActivity"/>
+  <parameter name="platformVersion" value="8.0.1"/>
+  <parameter name="platformName" value="Android"/>
+  <parameter name="deviceName" value="c6a262169806"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Generic.LaunchApp">
+        <methods>
+          <include name="launchInvestorApp"/>
+        </methods>
+      </class> <!-- Generic.LaunchApp -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
