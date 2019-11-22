@@ -33,8 +33,8 @@ public class LaunchApp {
 		//driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 		Thread.sleep(20000);
 	//	System.out.println(driver.manage().window().getSize());
+		
 	}
-
 }
 
 //	public void scrollUp() {
